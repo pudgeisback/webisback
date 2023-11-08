@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<title>Сравнение метрополитенов</title>
+<body background="1/images.jpg">
+<h3>
+<a href="index.html">Метрополитены мира</a><br>
+<a href="table.html">Таблица сравнения метрополитенов</a>
+</h3>
+     <p>
+       <details>
+         <p><summary>Построение графика</summary></p>
+        <form>
+          <p>
+            Значение по оси OX:<br>
+            <label><input type="radio" name="graph" value="class">Количество станций</label><br>
+            <label><input type="radio" name="graph" value="status">Пассажиропоток</label><br>
+            <label><input type="radio" name="graph" value="group">Стоимость поездки</label><br>
+          </p>
+          <p>
+            Результат:<br>
+            <label><input type="checkbox" name="graph" value="minmass">Минимальный пассажиропоток</label><br>
+            <label><input type="checkbox" name="graph" value="avgmass">Средний пассажиропоток</label><br>
+            <label><input type="checkbox" name="graph" value="maxmass">Протяжённость дорожных путей</label><br>
+            <label><input type="checkbox" name="graph" value="quantity">Количество станций</label><br>
+          </p>
+          <p>
+            <input type="button" value="Построить">
+            <input type="reset" value="Сбросить настройки">
+          </p>
+        </form>
+       </details>
+     </p>
+     <p>
+       <details>
+         <p><summary>Фильтр</summary></p>
+         <form>
+           <p>
+             <label>Город: <input type="text"></label><br>
+             <label>Общая оценка<input type="text"></label><br>
+             <label>Количетсво станций: от <input type="text"> до <input type="text"></label><br>
+             <label>Пассажиропоток: от <input type="text"> до <input type="text"></label><br>
+             <label>Стоимость одной поездки: от <input type="text"> до <input type="text"></label><br>
+           </p>
+           <p>
+             <input type="button" value="Найти">
+             <input type="reset" value="Сбросить фильтр">
+           </p>
+         </form>
+       </details>
+     </p>
+     <p>
+       <details>
+         <summary>Сортировка</summary>
+         <form>
+           <p>Первый уровень:
+           <select>
+             <option>Города</option>
+             <option>Количество станций</option>
+             <option>Пассажиропоток</option>
+             <option>Стоимость одной поездки</option>
+           </select>
+           <select>
+             <option>По возрастанию</option>
+             <option>По убыванию</option>
+           </select>
+           </p>
+           <p>Второй уровень:
+           <select>
+               <option>Города</option>
+             <option>Количество станций</option>
+             <option>Пассажиропоток</option>
+             <option>Стоимость одной поездки</option>
+           </select>
+           <select>
+             <option>По возрастанию</option>
+             <option>По убыванию</option>
+           </select>           
+           </p>
+           <p>Третий уровень:
+           <select>
+               <option>Города</option>
+             <option>Количество станций</option>
+             <option>Пассажиропоток</option>
+             <option>Стоимость одной поездки</option>
+           </select>
+           <select>
+             <option>По возрастанию</option>
+             <option>По убыванию</option>
+           </select>           
+           </p>
+           <p>
+             <input type="button" value="Сортировать">
+             <input type="reset" value="Сбросить">
+           </p>
+         </form>
+       </details>
+     </p>
+<table border=1>
+  <caption>Сравнение метрополитенов мира</caption> 
+  <tr>
+	<th rowspan="2">Города</th>
+    <th colspan="2">Количество станций</th>
+	
+    <th rowspan=2>Пассажиропоток</th>
+    <th rowspan="2">Стоимость одной поездки</th>
+	<th rowspan="2">Общая оценка</th>
+  </tr>
+  <tr>
+    <td class="first">Наземные</td>
+    <td class="first">Подземные</td>
+    
+  </tr>
+  <tr>
+    <td>Москва</td>
+    <td>52</td>
+    <td>167</td>
+    <td>3.000</td>
+    <td>50-62 </td>
+	<td>9/10</td>
+  </tr>
+  <tr>
+    <td>Санкт-Петербург</td>
+    <td>8</td>
+    <td>64</td>
+    <td>726.5</td>
+    <td>70</td>
+	<td>6/10</td>
+  </tr>
+  <tr>
+    <td>Нижний Новгород</td>
+    <td>0</td>
+    <td>15</td>
+    <td>27.6 </td>
+    <td>30-35</td>
+	<td>4/10</td>
+    </tr>
+  <tr>
+    <td>Чикаго</td>
+    <td>32</td>
+    <td>113</td>
+    <td>230</td>
+    <td>130-160</td>
+	<td>7/10</td>
+    </tr>
+  <tr>
+    <td>Нью-Йорк</td>
+    <td>264</td>
+    <td>196</td>
+    <td>1727</td>
+    <td>160-200</td>
+	<td>5/10</td>
+    </tr>
+  <tr>
+    <td>Лос-Анджелес</td>
+    <td>82</td>
+    <td>22</td>
+    <td>44.9</td>
+    <td>110-150</td>
+	<td>8/10</td>
+    </tr>
+  <tr>
+    <td>Пекин</td>
+    <td>75</td>
+    <td>387</td>
+    <td>3789</td>
+    <td>100</td>
+	<td>9/10</td>
+    </tr>
+  <tr>
+    <td>Гонконг</td>
+    <td>35</td>
+    <td>67</td>
+    <td>1767</td>
+    <td>120</td>
+	<td>10/10</td>
+    </tr>
+  <tr>
+    <td>Шанхай</td>
+    <td>175</td>
+    <td>331</td>
+    <td>3537</td>
+    <td>150</td>
+	<td>8/10</td>
+    </tr>
+  </table>
+</body>
+
+
+</html>
